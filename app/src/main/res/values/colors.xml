@@ -1,17 +1,23 @@
 <?xml version="1.0" encoding="utf-8"?>
 <resources>
     <color name="black">#FF000000</color>
+    <color name="light_black">#1F1E1E</color>
+    <color name ="manatee_grey">#979aaa</color>
+    <color name ="silver_sand">#bfc1c2</color>
+    <color name ="lavender_grey">#E3E3E8</color>
+    <color name ="silver">#c0c0c0 </color>
+    <color name="platinum">#e5e4e2</color>
     <color name="white">#FFFFFFFF</color>
     <color name="tomato">#ff6347</color>
     <color name="scarlet">#ff2400</color>
-    <color name="platinum">#e5e4e2</color>
-    <color name ="ghost_white">#f8f8ff</color>
-    <color name ="silver">#c0c0c0 </color>
-    <color name="lawn_green">#7cfc00</color>
-    <color name="lime_green">#32cd32 </color>
+    <color name="light_green">#ddf999</color>
+    <color name="dark_green">#A0CC2D</color>
     <color name ="rose_pink">#ff66cc</color>
-    <color name ="lavender_grey">#c4c3d0</color>
-    <color name ="manatee_grey">#979aaa</color>
-    <color name ="silver_sand">#bfc1c2</color>
 
+    <color name="Sun">#BA4B4B</color>
+    <color name="Sun_bg">#fff0f0</color>
+    <color name="Dew">#6ca899</color>
+    <color name="Dew_bg">#f8f9f9</color>
+    <color name="Temp">#c19972</color>
+    <color name="Temp_bg">#fff9dc</color>
 </resources>
