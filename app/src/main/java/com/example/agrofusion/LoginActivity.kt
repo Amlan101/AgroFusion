@@ -26,14 +26,18 @@ class LoginActivity : AppCompatActivity() {
 
     private fun submitDetails() {
 
-        binding.phoneContainer.helperText = validPhone()
-        binding.passwordContainer.helperText = validPassword()
+        validLogin()
 
-        val validPhone =binding.phoneContainer.helperText == null
-        val validPassword =binding.passwordContainer.helperText == null
+//        binding.phoneContainer.helperText = validPhone()
+//        binding.passwordContainer.helperText = validPassword()
+//
+//        val validPhone =binding.phoneContainer.helperText == null
+//        val validPassword =binding.passwordContainer.helperText == null
 
-        if( validPhone && validPassword) validLogin()
-        else invalidLogin()
+
+
+//        if( validPhone && validPassword) validLogin()
+//        else invalidLogin()
     }
 
     private fun invalidLogin() {
