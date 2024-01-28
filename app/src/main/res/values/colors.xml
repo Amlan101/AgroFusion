@@ -1,0 +1,17 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+    <color name="black">#FF000000</color>
+    <color name="white">#FFFFFFFF</color>
+    <color name="tomato">#ff6347</color>
+    <color name="scarlet">#ff2400</color>
+    <color name="platinum">#e5e4e2</color>
+    <color name ="ghost_white">#f8f8ff</color>
+    <color name ="silver">#c0c0c0 </color>
+    <color name="lawn_green">#7cfc00</color>
+    <color name="lime_green">#32cd32 </color>
+    <color name ="rose_pink">#ff66cc</color>
+    <color name ="lavender_grey">#c4c3d0</color>
+    <color name ="manatee_grey">#979aaa</color>
+    <color name ="silver_sand">#bfc1c2</color>
+
+</resources>
