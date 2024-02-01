@@ -6,10 +6,19 @@
     xmlns:app="http://schemas.android.com/apk/res-auto"
     tools:context=".CommunityFragment">
 
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:src="@drawable/profile_background_gradient"
+        app:layout_constraintBottom_toBottomOf="@id/Community"
+        app:layout_constraintTop_toTopOf="parent" />
+
     <TextView
+        android:id="@+id/Community"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:layout_marginTop="4dp"
+        android:layout_marginTop="40dp"
+        android:padding="30dp"
         android:gravity="center"
         android:text="This is community page"
         android:textSize="24sp"
