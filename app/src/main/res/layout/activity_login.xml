@@ -6,6 +6,28 @@
     android:layout_height="match_parent"
     tools:context=".LoginActivity">
 
+    <ImageView
+        android:layout_width="match_parent"
+        android:layout_height="0dp"
+        android:src="@drawable/profile_background_gradient"
+        app:layout_constraintBottom_toTopOf="@+id/registerBtn"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/WelcomeText"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_margin="30dp"
+        android:fontFamily="@font/rubik"
+        android:text="@string/app_name"
+        android:textSize="26sp"
+        android:textStyle="bold"
+        app:layout_constraintBottom_toTopOf="@id/phoneContainer"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+
 
     <com.google.android.material.textfield.TextInputLayout
         android:id="@+id/phoneContainer"
@@ -81,19 +103,34 @@
     <com.google.android.material.button.MaterialButton
 
         android:id="@+id/loginButton"
-        android:layout_marginTop="100dp"
         style="@style/Widget.Material3.Button.ElevatedButton"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="30dp"
+        android:layout_marginTop="70dp"
+        android:background="@drawable/login_btn_background"
+        android:text="@string/login"
+        android:textColor="@color/black"
+        android:textAllCaps="false"
+        android:textSize="18sp"
+        android:textStyle="bold"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@+id/passwordContainer" />
+
+    <TextView
+        android:id="@+id/registerBtn"
+        android:layout_width="0dp"
+        android:layout_height="wrap_content"
+        app:layout_constraintTop_toBottomOf="@id/loginButton"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:text="@string/login"
-        android:textStyle="bold"
-        android:textSize="18sp"
-        android:textAllCaps="false"
-        app:layout_constraintTop_toBottomOf="@+id/passwordContainer"
-        android:layout_width="0dp"
-        android:layout_marginHorizontal="30dp"
-        android:background="@drawable/login_btn_background"
-        android:layout_height="wrap_content"/>
+        android:layout_marginTop="35dp"
+        android:paddingTop="10dp"
+        android:text="Don't have an account? Register now"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        android:fontFamily="@font/rubik" />
 
     <LinearLayout
         android:id="@+id/loginOptionsDividerLinearLayout"
@@ -101,7 +138,7 @@
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:layout_marginTop="32dp"
-        app:layout_constraintTop_toBottomOf="@id/loginButton"
+        app:layout_constraintTop_toBottomOf="@id/registerBtn"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent">
 
@@ -112,6 +149,8 @@
             android:layout_weight="1"
             android:layout_gravity="center_vertical"
             android:background="#707070"/>
+
+
 
         <TextView
             android:id="@+id/loginOptionsTextView"
@@ -136,7 +175,7 @@
 
     <LinearLayout
         android:id="@+id/loginOptionsLinearLayout"
-        android:layout_width="match_parent"
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:orientation="horizontal"
         android:layout_marginHorizontal="20dp"
@@ -147,37 +186,27 @@
 
         <ImageView
             android:id="@+id/imageView"
-            android:layout_width="80dp"
-            android:layout_height="80dp"
-            android:layout_weight="1"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_margin="10dp"
             android:src="@drawable/google_icon"/>
 
         <ImageView
             android:id="@+id/imageView2"
-            android:layout_width="80dp"
-            android:layout_height="80dp"
-            android:layout_weight="1"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_margin="10dp"
             android:src="@drawable/facebook_icon" />
 
         <ImageView
             android:id="@+id/imageView3"
-            android:layout_width="80dp"
-            android:layout_height="80dp"
-            android:layout_weight="1"
+            android:layout_width="40dp"
+            android:layout_height="40dp"
+            android:layout_margin="10dp"
             android:src="@drawable/aadhar_small_icon"/>
     </LinearLayout>
 
-    <TextView
-        android:layout_width="0dp"
-        android:layout_height="wrap_content"
-        app:layout_constraintTop_toBottomOf="@id/loginOptionsLinearLayout"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="65dp"
-        android:text="Don't have an account? Register now"
-        android:textAlignment="center"
-        android:textSize="16sp"
-        android:fontFamily="@font/rubik" />
+
 
 
 </androidx.constraintlayout.widget.ConstraintLayout>
