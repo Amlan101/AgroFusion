@@ -5,6 +5,25 @@
     <string name="email">Email</string>
     <string name="forgot_password">Forgot Password?</string>
     <string name="or_login_using">Or Login Using</string>
-    <!-- TODO: Remove or change this placeholder text -->
+    <string name="disease_name"><b>Early Blight</b></string>
+    <string name="disease_symptoms">Initially, small dark spots form on older foliage near the ground.
+        Leaf spots are round, brown and can grow up to half inch in diameter. Larger spots have target-like concentric rings. The tissue around spots often turns yellow.
+        Severely infected leaves turn brown and fall off, or dead, dried leaves may cling to the stem.
+        Stems are infected at or just above the soil line. The stem turns brown, sunken and dry (collar rot).
+        If the infection girdles the stem, the seedling wilts and dies.
+        Stem infections on older plants are oval to irregular, dry brown areas with dark brown concentric rings.
+</string>
+    <string name="disease_control_1"><b>Mechanical Controls: </b>
+    Infected Leaves: Regularly inspect plants and promptly remove any leaves showing symptoms of early blight. Dispose of the infected material properly.
+    </string>
+    <string name="disease_control_2">
+        <b> Mulching around the base of plants</b>  helps prevent soil splashing onto lower leaves. This can be particularly useful in reducing the spread of early blight.
+    </string>
+    <string name="disease_control_3">
+        <b>Chemical Controls: </b>
+        The other control measures include treatment of seed with Captan or Thiram(pesticide) @ 2 g per kg of seed.
+        Spray the crop with Indofil M-45 (Pesticide)@ 1.5 kg per hectare as soon as the disease is noticed in the field.
+        Repeat the spray at 7-10 day intervals.
+    </string>
     <string name="hello_blank_fragment">Hello blank fragment</string>
 </resources>

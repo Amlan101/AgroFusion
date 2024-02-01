@@ -21,6 +21,7 @@ import com.google.android.gms.location.FusedLocationProviderClient
 import com.google.android.gms.location.LocationServices
 import com.google.android.material.card.MaterialCardView
 
+
 import java.io.File
 import java.io.FileOutputStream
 import java.io.IOException
@@ -125,7 +126,7 @@ class HomeFragment : Fragment() {
         if (requestCode == CAMERA_REQUEST_CODE && resultCode == Activity.RESULT_OK) {
             // Handle the captured image for ML processing
             val imageBitmap = data?.extras?.get("data") as Bitmap?
-                imageBitmap?.let {
+            imageBitmap?.let {
                     try {
                         // Define file location within app's internal storage
                         val file = File(requireContext().filesDir, "captured_image.jpg")
@@ -136,6 +137,9 @@ class HomeFragment : Fragment() {
                         // Close OutputStream
                         outputStream.close()
                         // Optionally, handle success (e.g., show a message to the user)
+
+                        //Opening the disease fragment irrespective of the disease
+                        openNewFragment()
                     } catch (e: IOException) {
                         // Handle IOException (e.g., show error message)
                         Log.d("Error","IO exception")
@@ -181,5 +185,14 @@ class HomeFragment : Fragment() {
             Log.d("ERROR", "The view is not drawn yet")
         }
 
+    }
+
+    private fun openNewFragment() {
+        // Replace the current fragment with the new one
+        val fragmentTransaction = requireActivity().supportFragmentManager.beginTransaction()
+        val newFragment = DiseaseDescriptionFragment() // Replace YourNewFragment with your actual fragment class
+        fragmentTransaction.replace(R.id.fragmentContainer, newFragment) // Replace fragment_container with your actual container id
+        fragmentTransaction.addToBackStack(null)
+        fragmentTransaction.commit()
     }
 }

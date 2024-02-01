@@ -17,8 +17,8 @@
         app:helperText="*Required"
         app:helperTextTextColor="@color/scarlet"
         app:layout_constraintEnd_toEndOf="parent"
-        app:layout_constraintStart_toStartOf="parent"
-        app:layout_constraintTop_toTopOf="parent">
+        app:layout_constraintBottom_toTopOf="@id/passwordContainer"
+        app:layout_constraintStart_toStartOf="parent">
 
         <com.google.android.material.textfield.TextInputEditText
             android:id="@+id/phoneEditText"
@@ -173,10 +173,11 @@
         app:layout_constraintTop_toBottomOf="@id/loginOptionsLinearLayout"
         app:layout_constraintStart_toStartOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
-        android:layout_marginTop="40dp"
-        android:text="New Registration?"
+        android:layout_marginTop="65dp"
+        android:text="Don't have an account? Register now"
         android:textAlignment="center"
         android:textSize="16sp"
         android:fontFamily="@font/rubik" />
+
 
 </androidx.constraintlayout.widget.ConstraintLayout>

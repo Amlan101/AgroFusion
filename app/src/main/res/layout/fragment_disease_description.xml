@@ -1,0 +1,108 @@
+<?xml version="1.0" encoding="utf-8"?>
+<androidx.constraintlayout.widget.ConstraintLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    tools:context=".DiseaseDescriptionFragment">
+
+
+    <ImageView
+        android:id="@+id/backgroundDrawable"
+        android:layout_width="match_parent"
+        android:layout_height="380dp"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent"
+        app:srcCompat="@drawable/profile_background_gradient" />
+
+    <ImageView
+        android:id="@+id/diseaseImageView"
+        android:layout_width="300dp"
+        android:layout_height="250dp"
+        android:layout_marginTop="15dp"
+        android:elevation="2dp"
+        android:src="@drawable/plantdiseasedefault"
+        app:layout_constraintBottom_toTopOf="@id/diseaseFoundTextView"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toTopOf="parent" />
+
+    <TextView
+        android:id="@+id/diseaseFoundTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="50dp"
+        android:layout_marginTop="10dp"
+        android:fontFamily="@font/rubik"
+        android:text="Disease Found:"
+        android:textAlignment="center"
+        android:textSize="16sp"
+        android:textStyle="italic"
+        app:layout_constraintBottom_toTopOf="@id/diseaseNameTextView"
+        app:layout_constraintEnd_toEndOf="@+id/diseaseImageView"
+        app:layout_constraintStart_toStartOf="@+id/diseaseImageView"
+        app:layout_constraintTop_toBottomOf="@+id/diseaseImageView" />
+
+    <TextView
+        android:id="@+id/diseaseNameTextView"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:layout_marginHorizontal="50dp"
+        android:layout_marginTop="10dp"
+        android:layout_marginBottom="15dp"
+        android:elevation="2dp"
+        android:fontFamily="@font/rubik"
+        android:gravity="center_horizontal"
+        android:maxLines="1"
+        android:text="@string/disease_name"
+        android:textAlignment="center"
+        android:textSize="30sp"
+        app:layout_constraintBottom_toBottomOf="@id/backgroundDrawable"
+        app:layout_constraintEnd_toEndOf="@+id/diseaseFoundTextView"
+        app:layout_constraintStart_toStartOf="@+id/diseaseFoundTextView"
+        app:layout_constraintTop_toBottomOf="@+id/diseaseFoundTextView" />
+
+    <ScrollView
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:orientation="vertical"
+        app:layout_constraintEnd_toEndOf="parent"
+        app:layout_constraintHorizontal_bias="0.0"
+        app:layout_constraintStart_toStartOf="parent"
+        app:layout_constraintTop_toBottomOf="@id/backgroundDrawable"
+        app:layout_constraintVertical_bias="0.0">
+
+        <LinearLayout
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content"
+            android:orientation="vertical">
+
+
+            <TextView
+                android:id="@+id/diseaseControl1"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_margin="20dp"
+                android:fontFamily="@font/rubik"
+                android:text="@string/disease_control_1"
+                android:textSize="18sp"
+                android:textStyle="normal" />
+
+            <TextView
+                android:id="@+id/diseaseControl2"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginHorizontal="20dp"
+                android:layout_marginTop="5dp"
+                android:fontFamily="@font/rubik"
+                android:text="@string/disease_control_3"
+                android:textSize="18sp"
+                android:textStyle="normal" />
+
+            <View
+                android:layout_width="match_parent"
+                android:layout_height="450dp" />
+
+        </LinearLayout>
+    </ScrollView>
+</androidx.constraintlayout.widget.ConstraintLayout>
